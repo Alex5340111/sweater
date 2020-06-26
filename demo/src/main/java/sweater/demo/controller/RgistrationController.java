@@ -1,0 +1,37 @@
+package sweater.demo.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import sweater.demo.Role;
+import sweater.demo.User;
+import sweater.demo.repository.UserRepo;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Map;
+import java.util.Set;
+
+@Controller
+public class RgistrationController {
+    @Autowired
+    UserRepo userRepo;
+
+    @GetMapping("/registration")
+    public String registration() {
+        return "registration";
+    }
+
+    @PostMapping("/registration")
+    public String addUser(User user, Map<String, Object> model) {
+        User userFromDb = userRepo.findByUsername(user.getUsername());
+        if (userFromDb != null) {
+            model.put("message", "User exists!");
+            return "registration";
+        }
+        user.setActive(true);
+        user.setRoles(Collections.singleton(Role.USER));
+        return "redirect:/login";
+    }
+}

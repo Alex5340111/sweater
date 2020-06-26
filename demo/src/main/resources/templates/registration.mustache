@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <body>
-<p>Login page</p>
-<form action="/login" method="post">
+<p>Add new user:</p>
+{{#message}}
+    {{message}}
+{{/message}}
+<form action="/registration" method="post">
     <div><label> User Name : <input type="text" name="username"/> </label></div>
     <div><label> Password: <input type="password" name="password"/> </label></div>
     <input type="hidden" name="_csrf" value="{{_csrf.token}}">
     <div><input type="submit" value="Sign In"/></div>
 </form>
-<a href="registration.mustache">Add new user!</a>
 </body>
 </html>
