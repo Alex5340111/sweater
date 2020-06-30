@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot-starter-data-jpa:2.4.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0-SNAPSHOT/spring-boot-starter-data-jpa-2.4.0-20200623.124645-121.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0-SNAPSHOT/spring-boot-starter-data-jpa-2.4.0-20200630.161225-142.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0-SNAPSHOT/spring-boot-starter-data-jpa-2.4.0-20200623.124645-121-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0-SNAPSHOT/spring-boot-starter-data-jpa-2.4.0-20200630.161225-142-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0-SNAPSHOT/spring-boot-starter-data-jpa-2.4.0-20200623.124645-121-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-data-jpa/2.4.0-SNAPSHOT/spring-boot-starter-data-jpa-2.4.0-20200630.161225-142-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
