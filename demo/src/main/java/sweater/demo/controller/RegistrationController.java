@@ -8,13 +8,11 @@ import sweater.demo.Role;
 import sweater.demo.User;
 import sweater.demo.repository.UserRepo;
 
-import java.util.Collection;
 import java.util.Collections;
 import java.util.Map;
-import java.util.Set;
 
 @Controller
-public class RgistrationController {
+public class RegistrationController {
     @Autowired
     UserRepo userRepo;
 
@@ -32,6 +30,7 @@ public class RgistrationController {
         }
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));
+        userRepo.save(user);
         return "redirect:/login";
     }
 }
