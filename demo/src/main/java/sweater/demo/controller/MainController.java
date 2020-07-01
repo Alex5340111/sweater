@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import sweater.demo.Message;
 import sweater.demo.repository.MessageRepository;
 
-import javax.swing.*;
-import java.util.List;
 import java.util.Map;
 
 @Controller
