@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot-starter-logging:2.4.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.4.0-SNAPSHOT/spring-boot-starter-logging-2.4.0-20200630.173023-144.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.4.0-SNAPSHOT/spring-boot-starter-logging-2.4.0-20200701.131242-150.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.4.0-SNAPSHOT/spring-boot-starter-logging-2.4.0-20200630.173023-144-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.4.0-SNAPSHOT/spring-boot-starter-logging-2.4.0-20200701.131242-150-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.4.0-SNAPSHOT/spring-boot-starter-logging-2.4.0-20200630.173023-144-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-logging/2.4.0-SNAPSHOT/spring-boot-starter-logging-2.4.0-20200701.131242-150-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
