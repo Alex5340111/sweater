@@ -24,7 +24,7 @@ public class MainController {
     @GetMapping("/main")
     public String main(Map<String, Object> model) {
         Iterable<Message> outMessages = repository.findAll();
-        model.put("outMessages", outMessages);
+        model.put("messages", outMessages);
         return "main";
     }
 
@@ -34,7 +34,7 @@ public class MainController {
         repository.save(message);
         //
         Iterable<Message> outMessages = repository.findAll();
-        model.put("outMessages", outMessages);
+        model.put("messages", outMessages);
         return "main";
     }
 
@@ -46,7 +46,7 @@ public class MainController {
         } else {
             messages = repository.findAll();
         }
-        model.put("outMessages", messages);
+        model.put("messages", messages);
         return "main";
     }
 }
