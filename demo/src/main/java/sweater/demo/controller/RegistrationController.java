@@ -31,6 +31,7 @@ public class RegistrationController {
         user.setActive(true);
         user.setRoles(Collections.singleton(Role.USER));
         userRepo.save(user);
+        //noinspection SpringMVCViewInspection
         return "redirect:/login";
     }
 }

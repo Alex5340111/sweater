@@ -18,19 +18,19 @@
     </form>
 </div>
 <div>Список сообщений</div>
-<form method="post" action="filter">
+<form method="post" action="/filter">
     <label>
         <input type="text" name="filter">
         <input type="hidden" name="_csrf" value="{{_csrf.token}}">
     </label>
     <button type="submit">Найти</button>
 </form>
-{{#outMessages}}
+{{#messages}}
     <div>
         <b>ID:{{id}}</b>
         <span>Message:{{text}}</span>
         <i>Tag:{{tag}}</i>
     </div>
-{{/outMessages}}
+{{/messages}}
 </body>
 </html>

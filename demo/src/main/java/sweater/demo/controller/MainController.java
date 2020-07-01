@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import sweater.demo.Message;
 import sweater.demo.repository.MessageRepository;
 
-import javax.swing.*;
-import java.util.List;
 import java.util.Map;
 
 @Controller
@@ -26,7 +24,7 @@ public class MainController {
     @GetMapping("/main")
     public String main(Map<String, Object> model) {
         Iterable<Message> outMessages = repository.findAll();
-        model.put("outMessages", outMessages);
+        model.put("messages", outMessages);
         return "main";
     }
 
@@ -36,11 +34,11 @@ public class MainController {
         repository.save(message);
         //
         Iterable<Message> outMessages = repository.findAll();
-        model.put("outMessages", outMessages);
+        model.put("messages", outMessages);
         return "main";
     }
 
-    @PostMapping("filter")
+    @PostMapping("/filter")
     public String filter(@RequestParam String filter, Map<String, Object> model) {
         Iterable<Message> messages;
         if (filter != null && !filter.isEmpty()) {
@@ -48,7 +46,7 @@ public class MainController {
         } else {
             messages = repository.findAll();
         }
-        model.put("outMessages", messages);
-        return "main";
+        model.put("messages", messages);
+        return "redirect:main";
     }
 }
