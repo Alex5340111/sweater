@@ -3,8 +3,9 @@
 
 <@c.page>
     <div><@l.logout/></div>
+    <span><a href="/user">User list</a></span>
 
-    <!--       message put        -->
+    <!--       message put message       -->
     <div>
         <form method="post" action="/main"><!--@PostMapping("/main")-->
             <label>
