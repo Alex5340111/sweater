@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import sweater.demo.Role;
 import sweater.demo.User;
 import sweater.demo.repository.UserRepo;
 
@@ -14,6 +15,7 @@ import sweater.demo.repository.UserRepo;
 public class UserController {
     @Autowired
     private UserRepo userRepo;
+
     @GetMapping
     public String userList(Model model){
         model.addAttribute("users",userRepo.findAll());
@@ -23,12 +25,14 @@ public class UserController {
     @GetMapping("{user}")
     public String userEditForm(@PathVariable User user, Model model){
         model.addAttribute("user",user);
+        model.addAttribute("roles", Role.values());
         return "userEdit";
     }
+
     /**
      * TODO:
      * https://www.youtube.com/watch?v=6dteOGWy4uk&list=PLU2ftbIeotGpAYRP9Iv2KLIwK36-o_qYk&index=8&t=1s
-     * time ==6.06
+     * time ==7.00
      */
-    /
+
 }
