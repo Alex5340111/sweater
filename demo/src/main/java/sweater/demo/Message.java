@@ -57,4 +57,6 @@ public class Message {
     public void setAuthor(User author) {
         this.author = author;
     }
+
+
 }

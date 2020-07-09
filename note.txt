@@ -1,0 +1,1 @@
+UserDetailsService  https://www.codeflow.site/ru/article/spring-security-authentication-with-a-database
