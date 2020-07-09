@@ -2,7 +2,10 @@
 <#import "parts/login.ftlh" as l>
 
 <@c.page>
-    <@l.logout/>
+    <div><@l.logout/></div>
+    <span><a href="/user">User list</a></span>
+
+    <!--       message put message       -->
     <div>
         <form method="post" action="/main"><!--@PostMapping("/main")-->
             <label>
@@ -15,26 +18,27 @@
             <button type="submit">Добавить</button>
         </form>
     </div>
-
-
-
     <div>Список сообщений</div>
-    <form action="/main">
+
+
+    <!--       filter               -->
+    <form method="get" action="/main">
         <label>
             <input type="text" name="filter">
-            <input type="hidden" name="_csrf" value="${_csrf.token}">
         </label>
         <button type="submit">Найти</button>
     </form>
 
+
+    <!--       message list               -->
     <#list messages as message>
         <div>
-            <b>ID:${message.id}</b>
-            <span>Message:${message.text}</span>
-            <i>Tag:${message.tag}</i>
+            <b>${message.id}</b>
+            <span>${message.text}</span>
+            <i>${message.tag}</i>
             <strong>${message.authorName}</strong>
         </div>
     <#else>
-        No message!
+        No messages!
     </#list>
 </@c.page>
