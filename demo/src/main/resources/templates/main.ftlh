@@ -7,12 +7,13 @@
 
     <!--       message put message       -->
     <div>
-        <form method="post" action="/main"><!--@PostMapping("/main")-->
+        <form method="post" action="/main" enctype="multipart/form-data"><!--@PostMapping("/main")-->
             <label>
                 <input type="text" name="text" placeholder="Введите сообщение!">
             </label>
             <label>
                 <input type="text" name="tag" placeholder="Тег">
+                <input type="file" name="file">
             </label>
             <input type="hidden" name="_csrf" value="${_csrf.token}">
             <button type="submit">Добавить</button>
@@ -24,7 +25,7 @@
     <!--       filter               -->
     <form method="get" action="/main">
         <label>
-            <input type="text" name="filter">
+            <input type="text" name="filter" value="${filter?ifExists}">
         </label>
         <button type="submit">Найти</button>
     </form>
@@ -37,6 +38,11 @@
             <span>${message.text}</span>
             <i>${message.tag}</i>
             <strong>${message.authorName}</strong>
+            <div>
+                <#if message.filename??>
+                    <img src="/img/${message.filename}">
+                </#if>
+            </div>
         </div>
     <#else>
         No messages!
