@@ -55,7 +55,7 @@ public class MainController {
             Map<String, Object> model
     ) throws IOException {
         Message message = new Message(text, tag, user);
-        if (file != null) {
+        if (file != null && !file.getOriginalFilename().isEmpty()) {
             //TODO:https://www.youtube.com/watch?v=bmMWrTMB5uo&list=PLU2ftbIeotGpAYRP9Iv2KLIwK36-o_qYk&index=9
             //time 4:00
             File uploadDir = new File(uploadPath);
