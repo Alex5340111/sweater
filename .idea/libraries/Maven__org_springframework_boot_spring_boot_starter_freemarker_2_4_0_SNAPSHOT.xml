@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: org.springframework.boot:spring-boot-starter-freemarker:2.4.0-SNAPSHOT">
     <CLASSES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-freemarker/2.4.0-SNAPSHOT/spring-boot-starter-freemarker-2.4.0-20200702.145049-154.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-freemarker/2.4.0-SNAPSHOT/spring-boot-starter-freemarker-2.4.0-20200716.103146-198.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-freemarker/2.4.0-SNAPSHOT/spring-boot-starter-freemarker-2.4.0-20200702.145049-154-javadoc.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-freemarker/2.4.0-SNAPSHOT/spring-boot-starter-freemarker-2.4.0-20200716.103146-198-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-freemarker/2.4.0-SNAPSHOT/spring-boot-starter-freemarker-2.4.0-20200702.145049-154-sources.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-freemarker/2.4.0-SNAPSHOT/spring-boot-starter-freemarker-2.4.0-20200716.103146-198-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
