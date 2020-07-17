@@ -1,6 +1,8 @@
 <!--form LOGIN or REGISTRATION dependency of  the path -->
 <#macro login path isRegisterForm>
+    <!--Log: Page of the login-->
     <#if isRegisterForm>Page of the registration<#else>Page of the login</#if>
+
     <form action="${path}" method="post">
         <div class="form-group row">
             <label class="col-sm-2 col-form-label"> User Name </label>
@@ -28,7 +30,7 @@
     <div>
         <form method="post" action="/logout">
             <input type="hidden" name="_csrf" value="${_csrf.token}">
-            <input type="submit" value="Sign Out"/>
+            <button type="submit" class="btn btn-primary">Sign Out</button>
         </form>
     </div>
 </#macro>

@@ -27,6 +27,17 @@
             <button type="submit">Добавить</button>
         </form>
     </div>
+    <div>Список сообщений</div>
+
+
+    <!--       filter               -->
+    <form method="get" action="/main">
+        <label>
+            <input type="text" name="filter" value="${filter?ifExists}">
+        </label>
+        <button type="submit">Найти</button>
+    </form>
+
 
     <!--       message list               -->
     <#list messages as message>
