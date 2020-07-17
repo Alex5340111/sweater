@@ -1,5 +1,6 @@
 <!--form LOGIN or REGISTRATION dependency of  the path -->
 <#macro login path isRegisterForm>
+    <#if isRegisterForm>Page of the registration<#else>Page of the login</#if>
     <form action="${path}" method="post">
         <div class="form-group row">
             <label class="col-sm-2 col-form-label"> User Name </label>
