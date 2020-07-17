@@ -2,7 +2,7 @@
 <#import "parts/login.ftlh" as l>
 
 <@c.page>
-    <div><@l.logout/></div>
+
     <!--       filter               -->
     <div class="form-row">
         <div class="form-group col-md-6">
