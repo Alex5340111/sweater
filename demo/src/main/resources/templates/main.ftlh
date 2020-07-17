@@ -3,7 +3,15 @@
 
 <@c.page>
     <div><@l.logout/></div>
-    <span><a href="/user">User list</a></span>
+    <!--       filter               -->
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <form method="get" action="/main" class="form-inline">
+                <input class="form-control mr-3" type="text" name="filter" value="${filter?ifExists}">
+                <button type="submit" class="btn btn-primary" >Search</button>
+            </form>
+        </div>
+    </div>
 
     <!--       message put message       -->
     <div>
@@ -19,17 +27,6 @@
             <button type="submit">Добавить</button>
         </form>
     </div>
-    <div>Список сообщений</div>
-
-
-    <!--       filter               -->
-    <form method="get" action="/main">
-        <label>
-            <input type="text" name="filter" value="${filter?ifExists}">
-        </label>
-        <button type="submit">Найти</button>
-    </form>
-
 
     <!--       message list               -->
     <#list messages as message>
