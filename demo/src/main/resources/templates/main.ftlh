@@ -42,19 +42,22 @@
     <div>Список сообщений</div>
 
     <!--       message list               -->
+    <div class="card-columns">
     <#list messages as message>
-        <div>
-            <b>${message.id}</b>
+        <div class="card my-3">
+            <#if message.filename??>
+                <img src="/img/${message.filename}" class="card-img-top">
+            </#if>
+            <div class="m-2">
             <span>${message.text}</span>
+            </div>
             <i>${message.tag}</i>
-            <strong>${message.authorName}</strong>
-            <div>
-                <#if message.filename??>
-                    <img src="/img/${message.filename}">
-                </#if>
+            <div class="card-footer text-muted">
+                ${message.authorName}
             </div>
         </div>
     <#else>
         No messages!
     </#list>
+    </div>
 </@c.page>
