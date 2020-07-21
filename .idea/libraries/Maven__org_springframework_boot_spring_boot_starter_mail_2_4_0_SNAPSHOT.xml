@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.springframework.boot:spring-boot-starter-mail:2.4.0-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-mail/2.4.0-SNAPSHOT/spring-boot-starter-mail-2.4.0-20200720.131740-210.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-mail/2.4.0-SNAPSHOT/spring-boot-starter-mail-2.4.0-20200720.131740-210-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-starter-mail/2.4.0-SNAPSHOT/spring-boot-starter-mail-2.4.0-20200720.131740-210-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
