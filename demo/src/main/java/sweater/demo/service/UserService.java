@@ -39,9 +39,9 @@ public class UserService implements UserDetailsService {
 
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
-                    "Hello, %s!,\n" +
-                            "Welcome to Sweater. Please, vizit to next link: http://localhost:8080/activate" +
-                            user.getUsername(),
+                    "Hello, %s! \n" +
+                            "Welcome to Sweater. Please, visit next link: http://localhost:8080/activate/%s",
+                    user.getUsername(),
                     user.getActivationCode()
             );
             mailSender.send(user.getEmail(), "Activation code", message);
@@ -51,8 +51,8 @@ public class UserService implements UserDetailsService {
     }
 
     public boolean activateUser(String code) {
-        User user=userRepo.findByActivationCode(code);
-        if (user==null){
+        User user = userRepo.findByActivationCode(code);
+        if (user == null) {
             return false;
         }
         user.setActivationCode(null);
