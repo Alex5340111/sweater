@@ -3,5 +3,5 @@
 
 <@c.page>
     ${message?if_exists}
-    <@l.login "/login " false />
+    <@l.login path="/login " isRegisterForm=false />
 </@c.page>

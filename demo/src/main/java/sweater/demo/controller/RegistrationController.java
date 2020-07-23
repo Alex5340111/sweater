@@ -28,7 +28,7 @@ public class RegistrationController {
             return "registration";
         }
         //noinspection SpringMVCViewInspection
-        return "redirect:/login";
+        return "redirect:login";
     }
 
     @GetMapping("/activate/{code}")
