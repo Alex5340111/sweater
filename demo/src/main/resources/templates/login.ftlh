@@ -2,6 +2,6 @@
 <#import "parts/login.ftlh" as l>
 
 <@c.page>
-    ${message?if_exists}
+    ${message?ifExists}
     <@l.login path="/login " isRegisterForm=false />
 </@c.page>

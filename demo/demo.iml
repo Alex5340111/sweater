@@ -133,5 +133,6 @@
     <orderEntry type="library" name="Maven: org.springframework.boot:spring-boot-starter-mail:2.4.0-SNAPSHOT" level="project" />
     <orderEntry type="library" name="Maven: com.sun.mail:jakarta.mail:1.6.5" level="project" />
     <orderEntry type="library" name="Maven: com.sun.activation:jakarta.activation:1.2.2" level="project" />
+    <orderEntry type="library" name="Maven: org.flywaydb:flyway-core:6.5.0" level="project" />
   </component>
 </module>
